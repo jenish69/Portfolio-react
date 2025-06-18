@@ -1,0 +1,134 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #121212;
+  color: white;
+  flex-wrap: wrap;
+  gap: 150px;
+  padding-bottom: 136.4px;
+  position: relative;
+  z-index: 1;
+  padding-top: 132px;
+}
+
+.hero::before {
+  content: url(/Vector.png);
+  position: absolute;
+  left: 9%;
+  top: -10%;
+  transform: scale(0.75);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.intro {
+  color: #999;
+  margin-bottom: 0;
+}
+
+.name {
+  color: #ccc;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: orange;
+  background: linear-gradient(to right, rgb(169, 84, 0) 0%, rgb(255, 128, 0) 40%);
+  margin: 10px 0 30px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #ccc;
+  border: 1px solid #555;
+  padding: 7px 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.hire-btn {
+  background-color: rgb(255, 106, 0);
+  color: white;
+  padding: 0px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+  font-weight: 600;
+}
+
+.cv-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 0px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 30px;
+  background-color: #1a1a1a;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 55%;
+}
+
+.stat-box h3 {
+  color: orange;
+  margin-bottom: 5px;
+}
+
+.hero-image {
+    position: relative;
+    height: 460px;
+}
+.hero-image img {
+    width: 400px;
+    height: 530px;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    z-index: 2;
+    clip-path: inset( 0px 0px 0px round 0 0 200px 200px);
+}
+.hero-image::before {
+    content: "";
+    position: absolute;
+    transform: translateX(50%);
+    bottom: -15.2%;
+    right: 50%;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    z-index: 1;
+}

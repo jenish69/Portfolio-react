@@ -1,0 +1,113 @@
+.about {
+  background-color: #121212;
+  color: white;
+  padding: 7rem 10rem;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 0;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-image {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.about-hero-image img {
+    width: 400px;
+    height: 490px;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+.about-hero-image::before {
+    content: "";
+    position: absolute;
+    transform: translateX(50%);
+    bottom: 0;
+    right: 50%;
+    width: 360px;
+    height: 420px;
+    clip-path: inset( 0px 0px 0px round 200px 200px 15px 15px);
+    background-color: #1a1a1a;
+    z-index: 1;
+}
+.about-title-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.about-title-cnt h2 {
+    font-size: 40px;
+}
+.about-right {
+  flex: 2;
+}
+
+.about-right h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.cv-button {
+  padding: 0.6rem 1.2rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-circle {
+  border: 5px solid orange;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
