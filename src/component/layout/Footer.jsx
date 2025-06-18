@@ -4,10 +4,7 @@ export const Footer = () => {
   return (
         <footer className="footer">
             {/* Logo */}
-            <div className="footer-logo">
-                <span className="logo-orange">J</span>
-                <span className="logo-red">ENISH</span>
-            </div>
+            
 
             {/* Navigation Links */}
             {/* <nav className="footer-nav">
